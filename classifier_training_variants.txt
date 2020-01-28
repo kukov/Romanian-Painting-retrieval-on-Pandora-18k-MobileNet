@@ -1,0 +1,296 @@
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --learning_rate=0.0001 \
+    --testing_percentage=20 \
+    --validation_percentage=20 \
+    --train_batch_size=256 \
+    --validation_batch_size=-1 \
+    --flip_left_right True \
+    --random_scale=30 \
+    --random_brightness=30 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=8000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+
+site medium
+?? accuracy
+ Train accuracy = 43.4%
+I0104 10:24:59.504655 140331819095872 retrain.py:1115] 2020-01-04 10:24:59.504638: Step 7999: Cross entropy = 2.152249
+I0104 10:25:00.908333 140331819095872 retrain.py:1134] 2020-01-04 10:25:00.908275: Step 7999: Validation accuracy = 38.8% (N=3636)
+I0104 10:26:35.623535 140331819095872 retrain.py:862] Final test accuracy = 40.3% (N=3534)
+
+
+
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --learning_rate=0.0001 \
+    --testing_percentage=20 \
+    --validation_percentage=20 \
+    --train_batch_size=256 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=8000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+I0104 11:28:57.954847 139711043200832 retrain.py:1113] 2020-01-04 11:28:57.954767: Step 7999: Train accuracy = 50.4%
+I0104 11:28:57.955014 139711043200832 retrain.py:1115] 2020-01-04 11:28:57.954997: Step 7999: Cross entropy = 2.163883
+I0104 11:28:59.447541 139711043200832 retrain.py:1134] 2020-01-04 11:28:59.447486: Step 7999: Validation accuracy = 39.5% (N=3636)
+I0104 11:29:04.803549 139711043200832 retrain.py:862] Final test accuracy = 40.6% (N=3534)
+
+
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --learning_rate=0.0001 \
+    --testing_percentage=20 \
+    --validation_percentage=20 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=8000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+I0104 11:38:46.532486 140428554319680 retrain.py:1113] 2020-01-04 11:38:46.532434: Step 7999: Train accuracy = 43.0%
+I0104 11:38:46.532639 140428554319680 retrain.py:1115] 2020-01-04 11:38:46.532625: Step 7999: Cross entropy = 2.179725
+I0104 11:38:47.864208 140428554319680 retrain.py:1134] 2020-01-04 11:38:47.864155: Step 7999: Validation accuracy = 39.4% (N=3636)
+I0104 11:38:52.617966 140428554319680 retrain.py:862] Final test accuracy = 40.5% (N=3534)
+
+
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --learning_rate=0.0001 \
+    --testing_percentage=10 \
+    --validation_percentage=10 \
+    --train_batch_size=256 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=8000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+I0104 12:31:05.243083 139978457282368 retrain.py:1113] 2020-01-04 12:31:05.243023: Step 7999: Train accuracy = 37.5%
+I0104 12:31:05.243233 139978457282368 retrain.py:1115] 2020-01-04 12:31:05.243220: Step 7999: Cross entropy = 2.180609
+I0104 12:31:05.919915 139978457282368 retrain.py:1134] 2020-01-04 12:31:05.919860: Step 7999: Validation accuracy = 39.7% (N=1809)
+I0104 12:31:10.007528 139978457282368 retrain.py:862] Final test accuracy = 39.0% (N=1827)
+
+
+
+
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --learning_rate=0.0001 \
+    --testing_percentage=10 \
+    --validation_percentage=10 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=8000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+I0104 15:04:59.473522 140001177368384 retrain.py:1113] 2020-01-04 15:04:59.473469: Step 7999: Train accuracy = 47.0%
+I0104 15:04:59.473660 140001177368384 retrain.py:1115] 2020-01-04 15:04:59.473646: Step 7999: Cross entropy = 2.205673
+I0104 15:05:00.182740 140001177368384 retrain.py:1134] 2020-01-04 15:05:00.182685: Step 7999: Validation accuracy = 39.4% (N=1809)
+I0104 15:05:04.623793 140001177368384 retrain.py:862] Final test accuracy = 38.4% (N=1827)
+
+
+
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --learning_rate=0.0001 \
+    --testing_percentage=20 \
+    --validation_percentage=20 \
+    --train_batch_size=1024 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=8000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+I0104 16:01:24.438799 140645238478656 retrain.py:1113] 2020-01-04 16:01:24.438736: Step 7999: Train accuracy = 47.4%
+I0104 16:01:24.438946 140645238478656 retrain.py:1115] 2020-01-04 16:01:24.438935: Step 7999: Cross entropy = 2.117200
+I0104 16:01:25.767336 140645238478656 retrain.py:1134] 2020-01-04 16:01:25.767283: Step 7999: Validation accuracy = 39.7% (N=3636)
+I0104 16:01:30.487518 140645238478656 retrain.py:862] Final test accuracy = 41.0% (N=3534)
+
+
+
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --learning_rate=0.0001 \
+    --testing_percentage=10 \
+    --validation_percentage=10 \
+    --train_batch_size=1024 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=8000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+I0104 17:59:37.049286 139733159696192 retrain.py:1113] 2020-01-04 17:59:37.049216: Step 7999: Train accuracy = 43.1%
+I0104 17:59:37.049496 139733159696192 retrain.py:1115] 2020-01-04 17:59:37.049479: Step 7999: Cross entropy = 2.164750
+I0104 17:59:37.998805 139733159696192 retrain.py:1134] 2020-01-04 17:59:37.998739: Step 7999: Validation accuracy = 39.9% (N=1809)
+I0104 17:59:43.969867 139733159696192 retrain.py:862] Final test accuracy = 39.1% (N=1827)
+
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --testing_percentage=20 \
+    --validation_percentage=20 \
+    --train_batch_size=1024 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=8000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+I0104 19:28:25.143734 140558697514816 retrain.py:1113] 2020-01-04 19:28:25.143677: Step 7999: Train accuracy = 75.6%
+I0104 19:28:25.143877 140558697514816 retrain.py:1115] 2020-01-04 19:28:25.143864: Step 7999: Cross entropy = 0.840554
+I0104 19:28:26.502533 140558697514816 retrain.py:1134] 2020-01-04 19:28:26.502478: Step 7999: Validation accuracy = 51.3% (N=3636)
+I0104 19:28:31.509189 140558697514816 retrain.py:862] Final test accuracy = 51.4% (N=3534)
+
+
+
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --testing_percentage=20 \
+    --validation_percentage=20 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=8000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+I0104 20:54:10.976348 139964553652032 retrain.py:1113] 2020-01-04 20:54:10.976295: Step 7999: Train accuracy = 66.0%
+I0104 20:54:10.976491 139964553652032 retrain.py:1115] 2020-01-04 20:54:10.976478: Step 7999: Cross entropy = 0.981012
+I0104 20:54:12.426027 139964553652032 retrain.py:1134] 2020-01-04 20:54:12.425971: Step 7999: Validation accuracy = 51.0% (N=3636)
+I0104 20:54:18.135873 139964553652032 retrain.py:862] Final test accuracy = 51.4% (N=3534)
+
+
+
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --testing_percentage=10 \
+    --validation_percentage=10 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=8000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+I0104 21:04:09.142241 139778155644736 retrain.py:1113] 2020-01-04 21:04:09.142187: Step 7999: Train accuracy = 75.0%
+I0104 21:04:09.142377 139778155644736 retrain.py:1115] 2020-01-04 21:04:09.142364: Step 7999: Cross entropy = 0.841359
+I0104 21:04:09.969877 139778155644736 retrain.py:1134] 2020-01-04 21:04:09.969798: Step 7999: Validation accuracy = 52.1% (N=1809)
+I0104 21:04:15.527348 139778155644736 retrain.py:862] Final test accuracy = 52.1% (N=1827)
+
+
+
+
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --testing_percentage=10 \
+    --validation_percentage=10 \
+    --train_batch_size=1024 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=8000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+I0104 23:57:43.736865 139893166532416 retrain.py:1113] 2020-01-04 23:57:43.736804: Step 7999: Train accuracy = 70.7%
+I0104 23:57:43.737020 139893166532416 retrain.py:1115] 2020-01-04 23:57:43.737007: Step 7999: Cross entropy = 0.952232
+I0104 23:57:44.379549 139893166532416 retrain.py:1134] 2020-01-04 23:57:44.379496: Step 7999: Validation accuracy = 52.1% (N=1809)
+I0104 23:57:48.647802 139893166532416 retrain.py:862] Final test accuracy = 52.7% (N=1827)
+
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --testing_percentage=10 \
+    --validation_percentage=10 \
+    --train_batch_size=2048 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=8000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+I0105 03:24:14.947684 140544349538112 retrain.py:1113] 2020-01-05 03:24:14.947628: Step 7999: Train accuracy = 69.9%
+I0105 03:24:14.947819 140544349538112 retrain.py:1115] 2020-01-05 03:24:14.947807: Step 7999: Cross entropy = 0.948640
+I0105 03:24:15.607204 140544349538112 retrain.py:1134] 2020-01-05 03:24:15.607149: Step 7999: Validation accuracy = 51.8% (N=1809)
+I0105 03:24:19.972304 140544349538112 retrain.py:862] Final test accuracy = 52.9% (N=1827)
+
+
+
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --testing_percentage=10 \
+    --validation_percentage=10 \
+    --train_batch_size=128 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=40000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+I0110 00:38:27.128674 140230510638912 retrain.py:1113] 2020-01-10 00:38:27.128623: Step 39999: Train accuracy = 85.2%
+I0110 00:38:27.128809 140230510638912 retrain.py:1115] 2020-01-10 00:38:27.128793: Step 39999: Cross entropy = 0.548069
+I0110 00:38:27.907110 140230510638912 retrain.py:1134] 2020-01-10 00:38:27.907055: Step 39999: Validation accuracy = 51.1% (N=1816)
+I0110 00:38:32.324455 140230510638912 retrain.py:862] Final test accuracy = 49.4% (N=1764)
+
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --testing_percentage=10 \
+    --validation_percentage=10 \
+    --train_batch_size=128 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=20000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+I0110 09:35:50.664069 140590458242880 retrain.py:1113] 2020-01-10 09:35:50.664006: Step 19999: Train accuracy = 82.8%
+I0110 09:35:50.664222 140590458242880 retrain.py:1115] 2020-01-10 09:35:50.664208: Step 19999: Cross entropy = 0.589013
+I0110 09:35:51.384986 140590458242880 retrain.py:1134] 2020-01-10 09:35:51.384928: Step 19999: Validation accuracy = 52.4% (N=1816)
+I0110 09:35:55.876735 140590458242880 retrain.py:862] Final test accuracy = 51.1% (N=1764)
+
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --testing_percentage=10 \
+    --validation_percentage=10 \
+    --train_batch_size=2048 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=20000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+I0110 14:03:04.882893 139788977588032 retrain.py:1113] 2020-01-10 14:03:04.882834: Step 19999: Train accuracy = 77.9%
+I0110 14:03:04.883038 139788977588032 retrain.py:1115] 2020-01-10 14:03:04.883025: Step 19999: Cross entropy = 0.745673
+I0110 14:03:05.578433 139788977588032 retrain.py:1134] 2020-01-10 14:03:05.578375: Step 19999: Validation accuracy = 52.8% (N=1816)
+I0110 14:03:09.961046 139788977588032 retrain.py:862] Final test accuracy = 51.0% (N=1764)
+
+
+
+python3 retrain.py \
+    --image_dir /home/kukov/Common_Pandora_Romanian \
+    --testing_percentage=10 \
+    --validation_percentage=10 \
+    --train_batch_size=32 \
+    --learning_rate=0.0001 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=8000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+
+
+python3 retrain.py \
+    --image_dir /home/kukov/Common_Pandora_Romanian \
+    --testing_percentage=10 \
+    --validation_percentage=10 \
+    --train_batch_size=1024 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=16000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+---terminal cu un singur tab
+I0111 15:01:05.215605 139775574034240 retrain.py:1113] 2020-01-11 15:01:05.215544: Step 15999: Train accuracy = 80.3%
+I0111 15:01:05.215793 139775574034240 retrain.py:1115] 2020-01-11 15:01:05.215780: Step 15999: Cross entropy = 0.698706
+I0111 15:01:05.729271 139775574034240 retrain.py:1134] 2020-01-11 15:01:05.729216: Step 15999: Validation accuracy = 54.6% (N=1350)
+I0111 15:01:09.934759 139775574034240 retrain.py:862] Final test accuracy = 55.4% (N=1281)
+
+
+python3 retrain.py \
+    --image_dir /home/kukov/Common_Pandora_Romanian \
+    --testing_percentage=10 \
+    --validation_percentage=10 \
+    --train_batch_size=1024 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=40000 \
+---terminal cu mai multe taburi
+
+
+
+-------------------------------testare pe pandora
+python3 retrain.py \
+    --image_dir /home/kukov/Pandora18k \
+    --testing_percentage=10 \
+    --validation_percentage=10 \
+    --train_batch_size=1024 \
+    --validation_batch_size=-1 \
+    --eval_step_interval=100 \
+    --how_many_training_steps=16000 \
+    --tfhub_module https://tfhub.dev/google/imagenet/mobilenet_v2_100_224/feature_vector/3
+I0117 01:22:07.270323 140023446873920 retrain.py:1113] 2020-01-17 01:22:07.270257: Step 15999: Train accuracy = 76.3%
+I0117 01:22:07.270484 140023446873920 retrain.py:1115] 2020-01-17 01:22:07.270470: Step 15999: Cross entropy = 0.788780
+I0117 01:22:07.990961 140023446873920 retrain.py:1134] 2020-01-17 01:22:07.990902: Step 15999: Validation accuracy = 53.8% (N=1791)
+I0117 01:22:12.595120 140023446873920 retrain.py:862] Final test accuracy = 50.9% (N=1746)
+
